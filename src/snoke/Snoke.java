@@ -48,7 +48,7 @@ public class Snoke implements Jeu {
         this.metAJour();
     }
     
-    public void generePomme(){
+    private void generePomme(){
         int tmp = 3;
         int alX = (int) (tmp + (Math.random() * (Snoke.tailleMapX - 2*tmp)));
         int alY = (int) (tmp + (Math.random() * (Snoke.tailleMapY - 2*tmp)));
@@ -174,6 +174,7 @@ public class Snoke implements Jeu {
         this.pause = true;
     }
     
+    @Override
     public void unPause(){
         this.pause = false;
     }
@@ -187,11 +188,11 @@ public class Snoke implements Jeu {
 
     @Override
     public void setDifficulte(int difficulte) {
-        if(difficulte == Snoke.FACILE)
+        if(difficulte == Jeu.FACILE)
             this.vitesse = 200;
-        else if(difficulte == Snoke.MOYEN)
+        else if(difficulte == Jeu.MOYEN)
             this.vitesse = 120;
-        else if(difficulte == Snoke.DIFFICILE)
+        else if(difficulte == Jeu.DIFFICILE)
             this.vitesse = 50;
     }
 }

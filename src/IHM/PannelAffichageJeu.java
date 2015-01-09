@@ -7,11 +7,12 @@ import snoke.*;
 
 public class PannelAffichageJeu extends JPanel {
     
-    private Snoke j;
+    private Fenetre fen;
+    private Jeu j;
     
-    public PannelAffichageJeu(Snoke j){
-        this.j = j;
-        
+    public PannelAffichageJeu(Fenetre fen){
+        this.fen = fen;
+        this.j = fen.j;
     }
 
     public void paintComponent(Graphics g){

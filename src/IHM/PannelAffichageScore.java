@@ -16,7 +16,7 @@ public class PannelAffichageScore extends JPanel {
     public PannelAffichageScore(){
         score = new JLabel("Score : 0");
         score.setForeground(Color.WHITE);
-        this.setBackground(Color.BLACK);
+        this.setBackground(Color.GRAY);
         this.add(score);
     }
 }

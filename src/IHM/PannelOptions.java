@@ -19,7 +19,7 @@ import snoke.Snoke;
 public class PannelOptions extends JPanel {
     
     private Fenetre fen;
-    private JButton HARD,EASY,MEDIUM,retour;
+    private JButton hard,easy,medium,retour;
     
     public PannelOptions(Fenetre fen){
         this.fen = fen;
@@ -43,18 +43,24 @@ public class PannelOptions extends JPanel {
         JPanel pan = new JPanel();
         pan.setBackground(Color.GRAY);
         Lis l = new Lis();
-        HARD = new JButton("HARD");
-        HARD.addActionListener(l);
-        HARD.setPreferredSize(new Dimension(100,50));
-        pan.add(HARD);
-        EASY = new JButton("EASY");
-        EASY.addActionListener(l);
-        EASY.setPreferredSize(new Dimension(100,50));
-        pan.add(EASY);
-        MEDIUM = new JButton("MEDIUM");
-        MEDIUM.addActionListener(l);
-        MEDIUM.setPreferredSize(new Dimension(100,50));
-        pan.add(MEDIUM);
+        hard = new JButton("HARD");
+        hard.addActionListener(l);
+        hard.setPreferredSize(new Dimension(100,50));
+        hard.setBackground(Color.DARK_GRAY);
+        hard.setForeground(Color.WHITE);
+        easy = new JButton("EASY");
+        easy.addActionListener(l);
+        easy.setPreferredSize(new Dimension(100,50));
+        easy.setBackground(Color.DARK_GRAY);
+        easy.setForeground(Color.WHITE);
+        medium = new JButton("MEDIUM");
+        medium.addActionListener(l);
+        medium.setPreferredSize(new Dimension(100,50));
+        medium.setBackground(Color.DARK_GRAY);
+        medium.setForeground(Color.WHITE);
+        pan.add(easy);
+        pan.add(medium);
+        pan.add(hard);
         return pan;
     }
     
@@ -62,9 +68,11 @@ public class PannelOptions extends JPanel {
         JPanel pan = new JPanel();
         pan.setBackground(Color.GRAY);
         Lis l = new Lis();
-        retour = new JButton("retour");
+        retour = new JButton("RETOUR");
         retour.addActionListener(l);
         retour.setPreferredSize(new Dimension(150,50));
+        retour.setBackground(Color.DARK_GRAY);
+        retour.setForeground(Color.WHITE);
         pan.add(retour);
         return pan;
     }
@@ -73,13 +81,13 @@ public class PannelOptions extends JPanel {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            if(e.getSource() == HARD){
+            if(e.getSource() == hard){
                 PannelOptions.this.fen.j.setDifficulte(Jeu.DIFFICILE);
             }
-            if(e.getSource() == EASY){
+            if(e.getSource() == easy){
                 PannelOptions.this.fen.j.setDifficulte(Jeu.FACILE);
             }
-            if(e.getSource() == MEDIUM){
+            if(e.getSource() == medium){
                 PannelOptions.this.fen.j.setDifficulte(Jeu.MOYEN);
             }
             if(e.getSource() == retour){

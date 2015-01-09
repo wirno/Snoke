@@ -40,19 +40,21 @@ public class Fenetre extends JFrame{
     
     public void initPanJeu() throws InterruptedException{
         this.c.removeAll();
-        this.requestFocus();
         if(this.j.estEnPause())
             j.unPause();
         KeyLis lis = new KeyLis();
         this.addKeyListener(lis);
         this.c.setLayout(new BorderLayout());
         JPanel p = new JPanel();
+        p.setLayout(new BorderLayout());
         score = new JLabel("Score : "+this.j.getScore());
+        score.setHorizontalAlignment(JLabel.CENTER);
+        score.setFont(new Font(null,0,20));
         score.setForeground(Color.WHITE);
         p.setBackground(Color.GRAY);
-        p.add(score);
-        this.c.add(p,BorderLayout.NORTH);
-        this.c.add(new PannelAffichageJeu(this.j),BorderLayout.CENTER);
+        p.add(score,BorderLayout.NORTH);
+        p.add(new PannelAffichageJeu(this),BorderLayout.CENTER);
+        this.c.add(p);
         this.c.validate();
         this.requestFocus();
     }

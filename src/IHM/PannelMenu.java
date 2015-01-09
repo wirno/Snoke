@@ -37,11 +37,15 @@ public class PannelMenu extends JPanel {
         JPanel pan3 = new JPanel();
         pan3.setBackground(Color.GRAY);
         Lis l = new Lis();
-        jouer = new JButton("Jouer");
+        jouer = new JButton("JOUER");
+        jouer.setBackground(Color.DARK_GRAY);
+        jouer.setForeground(Color.WHITE);
         jouer.setPreferredSize(new Dimension(150,50));
         jouer.addActionListener(l);
         pan2.add(jouer);
-        options = new JButton("Options");
+        options = new JButton("OPTIONS");
+        options.setBackground(Color.DARK_GRAY);
+        options.setForeground(Color.WHITE);
         options.setPreferredSize(new Dimension(150,50));
         pan3.add(options);
         options.addActionListener(l);
