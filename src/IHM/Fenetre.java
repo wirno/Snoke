@@ -9,12 +9,13 @@ public class Fenetre extends JFrame{
     
     private Container c ;
     public Snoke j;
+    private JLabel score;
     
     public Fenetre() throws InterruptedException {
         super("Snake");
         this.c = this.getContentPane();
-        this.setBounds(0,0,500,500);
-        this.j = new Snoke((this.getWidth()-50)/20,(this.getHeight()-100)/20);
+        this.setBounds(0,0,600,600);
+        this.j = new Snoke((this.getWidth()-50)/20,(this.getHeight()-120)/20);
         this.j.nouvellePartie();
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -45,7 +46,11 @@ public class Fenetre extends JFrame{
         KeyLis lis = new KeyLis();
         this.addKeyListener(lis);
         this.c.setLayout(new BorderLayout());
-        JPanel p = new PannelAffichageScore();
+        JPanel p = new JPanel();
+        score = new JLabel("Score : "+this.j.getScore());
+        score.setForeground(Color.WHITE);
+        p.setBackground(Color.GRAY);
+        p.add(score);
         this.c.add(p,BorderLayout.NORTH);
         this.c.add(new PannelAffichageJeu(this.j),BorderLayout.CENTER);
         this.c.validate();
@@ -86,7 +91,7 @@ public class Fenetre extends JFrame{
                 Fenetre.this.initMenu();
                 j.pause();
             }
-            
+            score.setText("Score : "+j.getScore());
         }
 
         @Override

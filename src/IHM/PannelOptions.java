@@ -23,21 +23,50 @@ public class PannelOptions extends JPanel {
     
     public PannelOptions(Fenetre fen){
         this.fen = fen;
-        this.setLayout(new GridLayout(5,1));
-        this.add(new JLabel("Options"));
+        this.setLayout(new GridLayout(3,1));
+        this.add(this.pannelUn());
+        this.add(this.pannelDeux());
+        this.add(this.pannelTrois());       
+    }
+    
+    public JPanel pannelUn(){
+        JPanel pan = new JPanel();
+        pan.setBackground(Color.GRAY);
+        JLabel snoke = new JLabel("OPTIONS");
+        snoke.setForeground(Color.WHITE);
+        snoke.setFont(new Font("impact",Font.BOLD,60));
+        pan.add(snoke);
+        return pan;
+    }
+    
+    public JPanel pannelDeux(){
+        JPanel pan = new JPanel();
+        pan.setBackground(Color.GRAY);
         Lis l = new Lis();
         HARD = new JButton("HARD");
         HARD.addActionListener(l);
-        this.add(HARD);
+        HARD.setPreferredSize(new Dimension(100,50));
+        pan.add(HARD);
         EASY = new JButton("EASY");
         EASY.addActionListener(l);
-        this.add(EASY);
+        EASY.setPreferredSize(new Dimension(100,50));
+        pan.add(EASY);
         MEDIUM = new JButton("MEDIUM");
         MEDIUM.addActionListener(l);
-        this.add(MEDIUM);
+        MEDIUM.setPreferredSize(new Dimension(100,50));
+        pan.add(MEDIUM);
+        return pan;
+    }
+    
+    public JPanel pannelTrois(){
+        JPanel pan = new JPanel();
+        pan.setBackground(Color.GRAY);
+        Lis l = new Lis();
         retour = new JButton("retour");
         retour.addActionListener(l);
-        this.add(retour);
+        retour.setPreferredSize(new Dimension(150,50));
+        pan.add(retour);
+        return pan;
     }
     
     public class Lis implements ActionListener{

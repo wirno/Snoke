@@ -148,7 +148,7 @@ public class Snoke implements Jeu {
 
     @Override
     public int getScore() {
-        return 0;
+        return this.score;
     }
 
     @Override

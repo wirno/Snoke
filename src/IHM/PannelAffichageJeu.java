@@ -15,7 +15,7 @@ public class PannelAffichageJeu extends JPanel {
     }
 
     public void paintComponent(Graphics g){
-        g.setColor(Color.DARK_GRAY);
+        g.setColor(Color.GRAY);
         g.fillRect(0, 0, this.getWidth(), this.getHeight());
             for (int y = 0; y < Snoke.tailleMapY; y++) {
                 for (int x = 0; x < Snoke.tailleMapX; x++) {
