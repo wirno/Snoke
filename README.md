@@ -4,7 +4,7 @@
 
 Projet JAVA/Méthodologie de la production d'applications
 
-Crée par  :  
+Crée par le groupe DELTA :  
 Christopher BLESCHET  
 Matthieu LIVET  
 Paul VONG  
