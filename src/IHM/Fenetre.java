@@ -12,7 +12,7 @@ public class Fenetre extends JFrame{
     private JLabel score;
     
     public Fenetre() throws InterruptedException {
-        super("Snake");
+        super("Snoke");
         this.c = this.getContentPane();
         this.setBounds(0,0,600,600);
         this.j = new Snoke((this.getWidth()-50)/20,(this.getHeight()-120)/20);
