@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.0" sequence="0" timestamp="1420823832435" analysisTimestamp="1420823832550" release="">
+  <Project projectName="">
+    <Jar>C:\Users\wirno\Desktop\ressource\Snoke\build\classes\main\Main.class</Jar>
+    <Jar>C:\Users\wirno\Desktop\ressource\Snoke\build\classes\main\Element\Element.class</Jar>
+    <Jar>C:\Users\wirno\Desktop\ressource\Snoke\build\classes\main\Element\Pomme.class</Jar>
+    <Jar>C:\Users\wirno\Desktop\ressource\Snoke\build\classes\main\Element\Snake.class</Jar>
+    <Jar>C:\Users\wirno\Desktop\ressource\Snoke\build\classes\main\IHM\Fenetre$KeyLis.class</Jar>
+    <Jar>C:\Users\wirno\Desktop\ressource\Snoke\build\classes\main\IHM\Fenetre.class</Jar>
+    <Jar>C:\Users\wirno\Desktop\ressource\Snoke\build\classes\main\IHM\PanJeu.class</Jar>
+    <Jar>C:\Users\wirno\Desktop\ressource\Snoke\build\classes\main\IHM\PannelAffichageJeu.class</Jar>
+    <Jar>C:\Users\wirno\Desktop\ressource\Snoke\build\classes\main\IHM\PannelAffichageScore.class</Jar>
+    <Jar>C:\Users\wirno\Desktop\ressource\Snoke\build\classes\main\IHM\PannelMenu$Lis.class</Jar>
+    <Jar>C:\Users\wirno\Desktop\ressource\Snoke\build\classes\main\IHM\PannelMenu.class</Jar>
+    <Jar>C:\Users\wirno\Desktop\ressource\Snoke\build\classes\main\IHM\PannelOptions$Lis.class</Jar>
+    <Jar>C:\Users\wirno\Desktop\ressource\Snoke\build\classes\main\IHM\PannelOptions.class</Jar>
+    <Jar>C:\Users\wirno\Desktop\ressource\Snoke\build\classes\main\snoke\Jeu.class</Jar>
+    <Jar>C:\Users\wirno\Desktop\ressource\Snoke\build\classes\main\snoke\Snoke.class</Jar>
+    <SrcDir>C:\Users\wirno\Desktop\ressource\Snoke\src\main\java\Main.java</SrcDir>
+    <SrcDir>C:\Users\wirno\Desktop\ressource\Snoke\src\main\java\Element\Element.java</SrcDir>
+    <SrcDir>C:\Users\wirno\Desktop\ressource\Snoke\src\main\java\Element\Pomme.java</SrcDir>
+    <SrcDir>C:\Users\wirno\Desktop\ressource\Snoke\src\main\java\Element\Snake.java</SrcDir>
+    <SrcDir>C:\Users\wirno\Desktop\ressource\Snoke\src\main\java\IHM\Fenetre.java</SrcDir>
+    <SrcDir>C:\Users\wirno\Desktop\ressource\Snoke\src\main\java\IHM\PanJeu.java</SrcDir>
+    <SrcDir>C:\Users\wirno\Desktop\ressource\Snoke\src\main\java\IHM\PannelAffichageJeu.java</SrcDir>
+    <SrcDir>C:\Users\wirno\Desktop\ressource\Snoke\src\main\java\IHM\PannelAffichageScore.java</SrcDir>
+    <SrcDir>C:\Users\wirno\Desktop\ressource\Snoke\src\main\java\IHM\PannelMenu.java</SrcDir>
+    <SrcDir>C:\Users\wirno\Desktop\ressource\Snoke\src\main\java\IHM\PannelOptions.java</SrcDir>
+    <SrcDir>C:\Users\wirno\Desktop\ressource\Snoke\src\main\java\snoke\Jeu.java</SrcDir>
+    <SrcDir>C:\Users\wirno\Desktop\ressource\Snoke\src\main\java\snoke\Snoke.java</SrcDir>
+  </Project>
+  <BugInstance type="IL_INFINITE_RECURSIVE_LOOP" priority="1" rank="9" abbrev="IL" category="CORRECTNESS">
+    <Class classname="IHM.Fenetre">
+      <SourceLine classname="IHM.Fenetre" start="8" end="72" sourcefile="Fenetre.java" sourcepath="IHM/Fenetre.java"/>
+    </Class>
+    <Method classname="IHM.Fenetre" name="actualiseJeu" signature="()V" isStatic="false">
+      <SourceLine classname="IHM.Fenetre" start="63" end="72" startBytecode="0" endBytecode="150" sourcefile="Fenetre.java" sourcepath="IHM/Fenetre.java"/>
+    </Method>
+    <SourceLine classname="IHM.Fenetre" start="71" end="71" startBytecode="66" endBytecode="66" sourcefile="Fenetre.java" sourcepath="IHM/Fenetre.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE">
+    <Class classname="snoke.Snoke">
+      <SourceLine classname="snoke.Snoke" start="5" end="197" sourcefile="Snoke.java" sourcepath="snoke/Snoke.java"/>
+    </Class>
+    <Method classname="snoke.Snoke" name="&lt;init&gt;" signature="(II)V" isStatic="false">
+      <SourceLine classname="snoke.Snoke" start="16" end="20" startBytecode="0" endBytecode="95" sourcefile="Snoke.java" sourcepath="snoke/Snoke.java"/>
+    </Method>
+    <Field classname="snoke.Snoke" name="tailleMapX" signature="I" isStatic="true">
+      <SourceLine classname="snoke.Snoke" sourcefile="Snoke.java" sourcepath="snoke/Snoke.java"/>
+    </Field>
+    <SourceLine classname="snoke.Snoke" start="17" end="17" startBytecode="5" endBytecode="5" sourcefile="Snoke.java" sourcepath="snoke/Snoke.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE">
+    <Class classname="snoke.Snoke">
+      <SourceLine classname="snoke.Snoke" start="5" end="197" sourcefile="Snoke.java" sourcepath="snoke/Snoke.java"/>
+    </Class>
+    <Method classname="snoke.Snoke" name="&lt;init&gt;" signature="(II)V" isStatic="false">
+      <SourceLine classname="snoke.Snoke" start="16" end="20" startBytecode="0" endBytecode="95" sourcefile="Snoke.java" sourcepath="snoke/Snoke.java"/>
+    </Method>
+    <Field classname="snoke.Snoke" name="tailleMapY" signature="I" isStatic="true">
+      <SourceLine classname="snoke.Snoke" sourcefile="Snoke.java" sourcepath="snoke/Snoke.java"/>
+    </Field>
+    <SourceLine classname="snoke.Snoke" start="18" end="18" startBytecode="9" endBytecode="9" sourcefile="Snoke.java" sourcepath="snoke/Snoke.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 9 Jan 2015 18:17:12 +0100" total_classes="15" referenced_classes="330" total_bugs="3" total_size="542" num_packages="4" java_version="1.8.0_25" vm_version="25.25-b02" cpu_seconds="18.49" clock_seconds="10.17" peak_mbytes="199.90" alloc_mbytes="910.50" gc_seconds="0.27" priority_1="3">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="6">
+      <ClassStats class="Main" sourceFile="Main.java" interface="false" size="6" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="Element" total_bugs="0" total_types="3" total_size="85">
+      <ClassStats class="Element.Element" sourceFile="Element.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="Element.Pomme" sourceFile="Pomme.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="Element.Snake" sourceFile="Snake.java" interface="false" size="53" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="IHM" total_bugs="1" total_types="9" total_size="285" priority_1="1">
+      <ClassStats class="IHM.Fenetre" sourceFile="Fenetre.java" interface="false" size="59" bugs="1" priority_1="1"/>
+      <ClassStats class="IHM.Fenetre$KeyLis" sourceFile="Fenetre.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="IHM.PanJeu" sourceFile="PanJeu.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="IHM.PannelAffichageJeu" sourceFile="PannelAffichageJeu.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="IHM.PannelAffichageScore" sourceFile="PannelAffichageScore.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="IHM.PannelMenu" sourceFile="PannelMenu.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="IHM.PannelMenu$Lis" sourceFile="PannelMenu.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="IHM.PannelOptions" sourceFile="PannelOptions.java" interface="false" size="62" bugs="0"/>
+      <ClassStats class="IHM.PannelOptions$Lis" sourceFile="PannelOptions.java" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="snoke" total_bugs="2" total_types="2" total_size="166" priority_1="2">
+      <ClassStats class="snoke.Jeu" sourceFile="Jeu.java" interface="true" size="18" bugs="0"/>
+      <ClassStats class="snoke.Snoke" sourceFile="Snoke.java" interface="false" size="148" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1470" invocations="1508" avgMicrosecondsPerInvocation="974" maxMicrosecondsPerInvocation="99760" standardDeviationMircosecondsPerInvocation="5057"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1083" invocations="330" avgMicrosecondsPerInvocation="3282" maxMicrosecondsPerInvocation="229707" standardDeviationMircosecondsPerInvocation="13913"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="503" invocations="769" avgMicrosecondsPerInvocation="655" maxMicrosecondsPerInvocation="11201" standardDeviationMircosecondsPerInvocation="970"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="387" invocations="330" avgMicrosecondsPerInvocation="1174" maxMicrosecondsPerInvocation="117327" standardDeviationMircosecondsPerInvocation="6875"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="366" invocations="15" avgMicrosecondsPerInvocation="24451" maxMicrosecondsPerInvocation="357294" standardDeviationMircosecondsPerInvocation="88957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="297" invocations="1512" avgMicrosecondsPerInvocation="196" maxMicrosecondsPerInvocation="16540" standardDeviationMircosecondsPerInvocation="710"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="296" invocations="15" avgMicrosecondsPerInvocation="19748" maxMicrosecondsPerInvocation="287278" standardDeviationMircosecondsPerInvocation="71503"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="283" invocations="1460" avgMicrosecondsPerInvocation="194" maxMicrosecondsPerInvocation="70921" standardDeviationMircosecondsPerInvocation="2007"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="230" invocations="74" avgMicrosecondsPerInvocation="3114" maxMicrosecondsPerInvocation="28109" standardDeviationMircosecondsPerInvocation="5512"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="209" invocations="330" avgMicrosecondsPerInvocation="634" maxMicrosecondsPerInvocation="67210" standardDeviationMircosecondsPerInvocation="4431"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="206" invocations="73" avgMicrosecondsPerInvocation="2824" maxMicrosecondsPerInvocation="22417" standardDeviationMircosecondsPerInvocation="4459"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="196" invocations="374" avgMicrosecondsPerInvocation="524" maxMicrosecondsPerInvocation="66849" standardDeviationMircosecondsPerInvocation="3542"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="168" invocations="76" avgMicrosecondsPerInvocation="2214" maxMicrosecondsPerInvocation="28466" standardDeviationMircosecondsPerInvocation="4807"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="167" invocations="330" avgMicrosecondsPerInvocation="507" maxMicrosecondsPerInvocation="24088" standardDeviationMircosecondsPerInvocation="1817"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="165" invocations="330" avgMicrosecondsPerInvocation="502" maxMicrosecondsPerInvocation="13593" standardDeviationMircosecondsPerInvocation="1311"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="163" invocations="73" avgMicrosecondsPerInvocation="2240" maxMicrosecondsPerInvocation="35508" standardDeviationMircosecondsPerInvocation="5099"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="156" invocations="330" avgMicrosecondsPerInvocation="474" maxMicrosecondsPerInvocation="9887" standardDeviationMircosecondsPerInvocation="1053"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="152" invocations="88" avgMicrosecondsPerInvocation="1730" maxMicrosecondsPerInvocation="115002" standardDeviationMircosecondsPerInvocation="12182"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="150" invocations="74" avgMicrosecondsPerInvocation="2037" maxMicrosecondsPerInvocation="106344" standardDeviationMircosecondsPerInvocation="12250"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

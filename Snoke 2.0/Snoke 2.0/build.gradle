@@ -1,0 +1,12 @@
+apply plugin: 'java'
+apply plugin: 'findbugs'
+
+repositories {
+	mavenCentral()
+}
+findbugs {
+    toolVersion = "3.0.0"
+    ignoreFailures = true
+    effort = "max"
+    reportLevel = "high"
+}
